@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 int palindrome(int n)
 {
-    int s = 0;
-    int b = n;
-    for (int i = 0; i < n; i++)
+    int s = 0, b = n;
+    while (n != 0)
     {
         int a = n % 10;
         s = s * 10 + a;
@@ -15,17 +15,21 @@ int palindrome(int n)
             {
                 return 1;
             }
-        }
-        if (s != b)
-        {
-            return 0;
+            else
+            {
+
+                return 0;
+            }
         }
     }
+
+    return 0;
 }
+
 int main()
 {
     int n;
     cin >> n;
-    palindrome(n);
+    cout << palindrome(n);
     return 0;
 }
