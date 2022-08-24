@@ -1,6 +1,8 @@
 #include<iostream>
 #include<math.h>
+
 using namespace std;
+
 bool prime(int n){
     if(n <= 1){
         return false;
@@ -13,8 +15,8 @@ bool prime(int n){
     }
 
     return true;
-
 }
+
 int main(){
     int n;
     cin >> n;
