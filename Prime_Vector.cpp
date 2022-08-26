@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+
 using namespace std;
 
 vector<int> primeVector(int n){
@@ -9,7 +10,7 @@ vector<int> primeVector(int n){
         int check = 0;
         for(int j = 2; j * j <= i; j++){
             if(i % j == 0){
-                check=1;
+                check = 1;
                 break;
             }
         }
