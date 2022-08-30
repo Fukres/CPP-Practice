@@ -8,11 +8,6 @@ class MyPair{
     pairT1 first;
     pairT2 second;
 
-    MyPair(){
-        first = 0;
-        second = 0;
-    }
-
     MyPair(pairT1 a, pairT2 b){
         first = a;
         second = b;
